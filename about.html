@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About NewJeans</title>
+  <link rel="stylesheet" href="主页.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li style="font-family:'华文彩云';"><a href="index.html"><b>主页</b></a></li>
+        <li style="font-family:'华文彩云';"><a href="about.html"><b>关于</b></a></li>
+        <li style="font-family:'华文彩云';"><a href="members.html"><b>成员</b></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="font-family:'Broadway'">ABOUT NEWJEANS</h1>
+    
+	<p style="background-color: #fffafa; color:#a9a9a9; font-size:14px; line-height:1.5; font-family:'Segoe Script',Times,serif; margin:0 30px">NewJeans (MINJI, HANNI, DANIELLE, HAERIN, and HYEIN) debuted on July 22, 2022, as ADOR's first group, an independent label under HYBE led by Hee Jin Min. The act released New Jeans on August 1, 2022, instantly captivating the global audience and becoming the first K-pop band to reach a million sales with their debut album. One of the lead singles “Hype Boy” charted on Billboard Global 200 for 37 consecutive weeks– the longest record from any K-pop female act. Since then, a total of five tracks have marked their places on Billboard Hot 100 including global smash hits “Ditto,” “OMG,” and “Super Shy,” while their 2nd EP Get Up debuted at the top of Billboard 200. </p >
+	</br>
+	<h2 style="font-family:'Broadway'">Albums</h2>
+	<h4 style="font-family:Bradley Hand ITC; color:#bc8f8f; margin:0 27px">(🐇CLICK the cover to listen!)</h4>
+	<div class="album">
+	<link rel="stylesheet" href="style.css">
+      <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song1.mp3')">
+		<img src="images/1st ep.jpg" alt="NewJeans 专辑 1" width="160" height="160">
+        </a>
+		<h5 style="font-family:'Castellar'">1st EP 'New Jeans'</h5>
+      </div>
+      <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song2.mp3')">
+		<img src="images/ditto.jpg" alt="NewJeans 专辑 2" width="160" height="160">
+		</a>
+        <h5 style="font-family:'Castellar'">Ditto</h5>
+      </div>
+	  <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song3.mp3')">
+		<img src="images/omg.jpg" alt="NewJeans 专辑 3" width="160" height="160">
+		</a>
+        <h5 style="font-family:'Castellar'">OMG</h5>
+      </div>
+      <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song4.mp3')">
+		<img src="images/Zero.jpg" alt="NewJeans 专辑 4" width="160" height="160">
+		</a>
+        <h5 style="font-family:'Castellar'">Zero</h5>
+	  </div>
+	  <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song5.mp3')">
+		<img src="images/2nd ep.jpg" alt="NewJeans 专辑 5" width="160" height="160">
+		</a>
+        <h5 style="font-family:'Castellar'">2nd EP  'Get Up'</h5>
+      </div>
+      <div class="album-info">
+        <a href="#" onclick="playAudio(event, 'audio/song6.mp3')">
+		<img src="images/njwmx.jpg" alt="NewJeans 专辑 6" width="160" height="160">
+		</a>
+        <h5 style="font-family:'Castellar'">NJWMX</h5>
+      </div>
+    </div>
+	<audio id="audio-player" controls></audio>
+  </main>
+
+  <footer>
+    &copy; 2024 Cathy Chu
+  </footer>
+  <script>
+    function playAudio(event, audioFile) {
+      event.preventDefault(); // 防止链接跳转
+      const audioPlayer = document.getElementById('audio-player');
+      audioPlayer.src = audioFile;
+      audioPlayer.play();
+    }
+  </script>
+</body>
+</html>

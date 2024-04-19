@@ -1,0 +1,19 @@
+.member {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.member-info {
+  width: 240px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.member-info img {
+  max-width: 100%;
+  height: auto;
+}
